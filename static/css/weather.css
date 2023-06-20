@@ -1,0 +1,126 @@
+:root {
+    --light-dark: #62757F;
+    --medium: #EDF2F4;
+    --light: #F7F9FB;
+    --accent: #ea9e9e;
+    --accent-dark: #FF3B3B;
+    --text-dark: #2F4858;
+    --nice: #1AA7EC;
+} 
+
+* {
+    box-sizing:border-box;
+    margin: 0;
+    font-family: 'Futura';
+}
+
+body {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: var(--light);
+    color: var(--text-dark)
+}
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+header {
+    padding: 1rem, 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#weather-form {
+    display: flex;
+}
+
+#location-input {
+    flex: 1 1 0%;
+    background-color: var(--medium);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-right: 0.25rem;
+    color: var(--text-dark);
+    font-size: 1rem;
+}
+
+#task-creation::placeholder {
+    color: var(--light-dark);
+}
+
+#location-submit {
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--accent), var(--accent-dark));    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#new-task:hover{
+    opacity: 0.8;
+}
+
+#new-task:active{
+    opacity: 0.6;
+}
+
+main{
+    padding: 1rem, 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.location-weather{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 40vh;
+    margin: 20px auto;
+    margin-left: -60px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.location-weather h2{
+    font-size: 1.25rem;
+    transition: 0.4s;
+}
+
+.location-weather h3{
+    font-size: 0.75rem;
+    transition: 0.4s;
+}
+
+.location-weather h4{
+    position: absolute;
+    bottom: 0.1px;
+    left: 0.1px;
+}
+
+.location-weather h5{
+    position: absolute;
+    bottom: 0.1px;
+    right: 0.1px;
+}
+
+#weather-image {
+    max-width: 100px;
+    height: auto;
+}

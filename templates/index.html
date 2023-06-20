@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>US Weather App</title>
+        <link rel="stylesheet" href="static/css/weather.css"/>
+    </head>
+    <body>
+        <header>
+            <form id="weather-form">
+                <p1>📍</p1>
+                <input type="text" id="location-input" placeholder="City or Zip"/>
+                <input type="submit" id="location-submit"/>
+            </form>
+        </header>
+        <main>
+            <section class="location-weather">
+                <h2 id="location-name"></h2>
+                <img id="weather-image" alt="Current weather image" />
+                <h3 id="weather-description"></h3>
+                <h4 id="temperature"></h4>
+                <h5 id="humidity"></h5>
+            </section>
+        </main>
+        <script src="/static/js/weather.js"></Script>
+    </body>
+</html>
